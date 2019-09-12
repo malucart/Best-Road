@@ -2,7 +2,6 @@
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
-using namespace std;
 
 int main () {
     // generating real random numbers
@@ -181,12 +180,12 @@ int main () {
         }
     }
     
-    cout << "The best road:" << endl;
+    std::cout << "The best road:" << endl;
     for (int i = 0; i < how_many_cities; i++) {
         if (i == how_many_cities-1) {
             cout << road[index_biggest_fitness][i] << endl;
         } else {
-            cout << road[index_biggest_fitness][i] << " -> ";
+            std::cout << road[index_biggest_fitness][i] << " -> ";
         }
     }
     cout << "Cost of the road: " << 1/fitness[index_biggest_fitness] << endl;
