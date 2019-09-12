@@ -188,5 +188,5 @@ int main () {
             std::cout << road[index_biggest_fitness][i] << " -> ";
         }
     }
-    cout << "Cost of the road: " << 1/fitness[index_biggest_fitness] << endl;
+    std::cout << "Cost of the road: " << 1/fitness[index_biggest_fitness] << endl;
 }
